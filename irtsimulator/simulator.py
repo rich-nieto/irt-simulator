@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 from .models.two_pl_model import TwoPLModel
 
 class IRTSimulator:
@@ -57,10 +56,4 @@ class IRTSimulator:
         probabilities = self.irt_model.compute_probabilities()
         responses = self.irt_model.simulate_responses(probabilities)
 
-        # Create DataFrame for responses
-        response_df = pd.DataFrame(
-            responses,
-            columns=[f"item_{i+1}" for i in range(self.n_items)],
-            index=[f"respondent_{j+1}" for j in range(self.n_respondents)]
-        )
-        return response_df
+        return responses
