@@ -12,9 +12,9 @@ setup(
     description="A library for simulating Item Response Theory (IRT) models",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/irtsimulator",  # Replace with your GitHub repo URL
+    url="https://github.com/rich-nieto/irt-simulator",  # Replace with your GitHub repo URL
     project_urls={  # Additional URLs related to your project
-        "Bug Tracker": "https://github.com/yourusername/irtsimulator/issues",
+        "Bug Tracker": "https://github.com/rich-nieto/irt-simulator/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",  # Python version compatibility
@@ -26,8 +26,7 @@ setup(
     packages=find_packages(where="irtsimulator"),  # Automatically find subpackages
     python_requires=">=3.7",  # Minimum Python version
     install_requires=[
-        "numpy>=1.21.0",
-        "pandas>=1.3.0",
+        "numpy>=2.2.0",
     ],
     extras_require={  # Optional dependencies
         "dev": ["pytest>=7.0.0", "sphinx>=4.0.0"],
