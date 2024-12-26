@@ -18,7 +18,7 @@
 
 1. Clone the repository or download the source code:
    ```bash
-   git clone https://github.com/yourusername/irtsimulator.git
+   git clone https://github.com/rich-nieto/irtsimulator.git
    cd irtsimulator
    ```
 
@@ -86,5 +86,5 @@ pip install -r requirements.txt
 ## Contact
 
 - Author: Rich Nieto
-- Email: rich.nieto@proton.me
-- GitHub: [yourusername](https://github.com/yourusername)
+- Email: rich.nieto@pm.me
+- GitHub: [rich-nieto](https://github.com/rich-nieto)
