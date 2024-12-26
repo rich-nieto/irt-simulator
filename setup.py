@@ -22,11 +22,10 @@ setup(
         "Operating System :: OS Independent",  # OS compatibility
         "Topic :: Scientific/Engineering :: Mathematics",
     ],
-    package_dir={"": "irtsimulator"},  # Root directory for the package
-    packages=find_packages(where="irtsimulator"),  # Automatically find subpackages
+    packages=find_packages(),  # Automatically find subpackages
     python_requires=">=3.7",  # Minimum Python version
     install_requires=[
-        "numpy>=2.2.0",
+        "numpy<2,>=1.17.0",
     ],
     extras_require={  # Optional dependencies
         "dev": ["pytest>=7.0.0", "sphinx>=4.0.0"],
