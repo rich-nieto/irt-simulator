@@ -9,7 +9,6 @@
 
 - Simulate response data using the **2PL model**.
 - Generate item parameters (discrimination and difficulty) and person abilities.
-- Outputs simulated responses in a convenient tabular format (Pandas DataFrame).
 - Reproducible simulations with seed support.
 
 ## Installation
@@ -48,7 +47,7 @@ print("Discrimination Parameters (a):", a)
 print("Difficulty Parameters (b):", b)
 print("Latent Abilities (theta):", theta)
 print("Simulated Responses:")
-print(responses.head())
+print(responses[:2])
 ```
 
 ### Output Example
@@ -58,17 +57,15 @@ Discrimination Parameters (a): [1.23 1.47 0.86 ...]
 Difficulty Parameters (b): [-0.52  0.34 -0.85 ...]
 Latent Abilities (theta): [ 0.45 -1.23  0.87 ...]
 Simulated Responses:
-                Item_1  Item_2  Item_3  ...
-Respondent_1         1       0       1  ...
-Respondent_2         0       1       0  ...
+  1       0       1  ...
+  0       1       0  ...
 ...
 ```
 
 ## Dependencies
 
-- Python >= 3.7
-- NumPy >= 1.21
-- Pandas >= 1.3
+- Python >= 3.12
+- NumPy >= 2.2.1
 
 Install all dependencies via:
 ```bash
